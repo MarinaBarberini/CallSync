@@ -149,3 +149,38 @@ body {
     color: #9ca3af;
     font-size: 0.875rem;
 }
+
+/* design responsivo */
+
+/* regras em telas menores que 768px */
+@media (max-width: 768px) {
+    
+    /* principal */
+    .main-container {
+        padding: 1.5rem;
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    /* cabeçalho*/
+    .header-main {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-slogan {
+        font-size: 1rem;
+    }
+
+    /* Form */
+    .form-group > div {
+        grid-template-columns: 1fr; 
+        gap: 0.5rem !important;
+    }
+
+    /* cards */
+    .card {
+        padding: 1.5rem;
+    }
+}
