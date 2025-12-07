@@ -1,0 +1,151 @@
+:root {
+    --color-primary: #4f46e5; /* rxo Quente  */
+    --color-secondary: #7dd3fc; /* azul Bebê  */
+    --color-background: #f9fafb; /* off-White */
+    --color-text-dark: #1f2937;
+    --color-text-light: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+}
+
+/* headr */
+.header-main {
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-logo {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--color-text-light);
+}
+
+.header-slogan {
+    font-size: 1.25rem; /* xl */
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+/* principal */
+.main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Duas colunas */
+    gap: 2.5rem;
+}
+
+/* secoes) */
+.card {
+    background-color: var(--color-text-light);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+/* form */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+}
+
+.form-button {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #4338ca;
+}
+
+/* LISTA DE CHAMADAS */
+.call-list-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.call-list-item-agendada {
+    background-color: #eef2ff; /* clara para agendadas */
+    border: 1px solid #c7d2fe;
+}
+
+.call-list-item-concluida {
+    background-color: #f3f4f6; /* neutra para concluídas */
+    border: 1px solid #d1d5db;
+}
+
+.call-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+}
+
+.status-agendada {
+    background-color: #c7d2fe; /* azul mais escuro */
+    color: #3730a3; /* Ttxto roxo escuro */
+}
+
+.status-concluida {
+    background-color: #a7f3d0;
+    color: #065f46;
+}
+
+/* footer */
+.footer-main {
+    background-color: var(--color-text-dark);
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
