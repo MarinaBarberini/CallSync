@@ -192,12 +192,9 @@ body {
 }
 
 /* breakpoint para monitores maiiores */
-@media screen and (min-width: 1921px) {
-    
+@media screen and (min-width: 1920px) { 
     .main-container {
         max-width: 1800px; 
-        margin: 0 auto;
-        padding: 2.5rem 4rem;   
         grid-template-columns: minmax(700px, 4fr) 1fr;
     }
 
